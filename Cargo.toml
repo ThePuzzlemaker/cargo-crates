@@ -1,0 +1,19 @@
+[package]
+name = "cargo-crates"
+version = "0.1.0"
+authors = ["ThePuzzlemaker <tpzker@thepuzzlemaker.info>"]
+edition = "2018"
+readme = "README.md"
+repository = "https://github.com/ThePuzzlemaker/cargo-crates"
+homepage = "https://github.com/ThePuzzlemaker/cargo-crates"
+license = "MIT"
+description = "A cargo command to quickly open the crates.io or docs.rs page for the latest version of a crate"
+
+[[bin]]
+name = "cargo-crates"
+
+[dependencies]
+clap = "2.33.1"
+opener = "0.4.1"
+cargo = "~0"
+crates_io_api = "0.6.0"
