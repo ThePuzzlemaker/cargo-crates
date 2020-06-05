@@ -64,7 +64,7 @@ fn main() {
     }
 
     if open_doc {
-        match opener::open(format!("https://docs.rs/crates/{}", crate_name)) {
+        match opener::open(format!("https://docs.rs/crate/{}", crate_name)) {
             Err(e) => {
                 eprintln!("error: failed to open link: {}", e);
                 std::process::exit(-1);
