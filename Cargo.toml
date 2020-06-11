@@ -8,7 +8,7 @@ repository = "https://github.com/ThePuzzlemaker/cargo-crates"
 homepage = "https://github.com/ThePuzzlemaker/cargo-crates"
 license = "MIT"
 description = "A cargo command to quickly open the crates.io or docs.rs page for the latest version of a crate"
-keywords = ["cargo", "crates.io", "command-line-utilities", "development-tools::cargo-plugins"]
+keywords = ["cargo", "crates-io", "command-line-utilities", "development-tools::cargo-plugins"]
 categories = ["development-tools::cargo-plugins", "command-line-utilities"]
 
 [[bin]]
