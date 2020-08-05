@@ -28,7 +28,12 @@ fn main() {
     let open_doc = sub_matches.is_present("doc");
 
     if open_doc {
-        match opener::open(format!("https://docs.rs/{}/*/{0}", crate_name)) {
+        let url = match crate_name {
+            "alloc" | "core" | "proc_macro" | "std" | "test" => format!("https://docs.rs/{}", crate_name),
+            _ => format!("https://docs.rs/{}/*/{0}", crate_name)
+        };
+        
+        match opener::open(url) {
             Err(e) => {
                 eprintln!("error: failed to open link: {}", e);
                 std::process::exit(-1);

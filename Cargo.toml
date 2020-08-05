@@ -1,6 +1,6 @@
 [package]
 name = "cargo-crates"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["ThePuzzlemaker <tpzker@thepuzzlemaker.info>"]
 edition = "2018"
 readme = "README.md"
