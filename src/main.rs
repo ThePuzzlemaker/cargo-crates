@@ -30,7 +30,7 @@ fn main() {
     if open_doc {
         let url = match crate_name {
             "alloc" | "core" | "proc_macro" | "std" | "test" => format!("https://docs.rs/{}", crate_name),
-            _ => format!("https://docs.rs/{}/*/{0}", crate_name)
+            _ => format!("https://docs.rs/{}/*", crate_name)
         };
         
         match opener::open(url) {
