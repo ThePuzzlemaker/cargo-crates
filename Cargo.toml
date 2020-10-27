@@ -15,6 +15,6 @@ categories = ["development-tools::cargo-plugins", "command-line-utilities"]
 name = "cargo-crates"
 
 [dependencies]
-clap = "2.33.1"
+clap = "2.33.3"
 opener = "0.4.1"
 cargo = "~0"
